@@ -12,6 +12,7 @@ end
 
 def take_a_number(line_customers, last_customer)
   line_customers << last_customer
+  line_of_customers = lines_customers + last_customer 
   puts "Welcome, #{last_customer}. You are number #{line_customers + 1} in line."
 end
 
