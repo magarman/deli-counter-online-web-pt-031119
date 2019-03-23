@@ -12,10 +12,9 @@ end
 
 def take_a_number(customer_array, name)
   customer_array << name
-  place_in_line = customer_array.each_with_index(name)
+  place_in_line = customer_array.find_index(name)
   puts "Welcome, #{name}. You are number #{place_in_line+1} in line."
 end
-
 
 def now_serving(customer_array)
   if customer_array.count == 0
