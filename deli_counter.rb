@@ -20,8 +20,8 @@ def now_serving(customer_array)
   if customer_array.count == 0
     puts "There is nobody waiting to be served!"
   elsif 
-    next_customer = customer_array.shift
-    phrase = "Currently serving #{next_customer}."
+    new_cust_array = customer_array.shift
+    phrase = "Currently serving #{new_cust_array}."
     puts phrase
   end
 end
