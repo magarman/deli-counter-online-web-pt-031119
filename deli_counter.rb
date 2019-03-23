@@ -11,7 +11,7 @@ def line(customer_array)
 end 
 
 def take_a_number(customer_array, name)
-  puts "Welcome, #{name}. You are number #{customer_array+1} in line."
+  puts "Welcome, #{name}. You are number #{customer_array + 1} in line."
 end
 
 def now_serving(customer_array)
