@@ -5,7 +5,7 @@ def line(customer_array)
     puts "The line is currently empty."
   else 
     phrase = "The line is currently:"
-    customer_array.each_with_index  { |customer, index| phrase +=" #{index+1}. #{customer}"}
+    customer_array.each.with_index(1)  { |customer, index| phrase +=" #{index}. #{customer}"}
     puts phrase
   end
 end 
