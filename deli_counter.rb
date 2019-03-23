@@ -13,7 +13,7 @@ end
 def take_a_number(customer_array, name)
   customer_array << name
   place_in_line = customer_array.each_with_index(name)
-  puts "Welcome, #{name}. You are number #{place_in_line+1} in line."
+  puts "Welcome, #{name}. You are number #{place_in_line + 1} in line."
 end
 
 
