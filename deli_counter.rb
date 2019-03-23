@@ -10,11 +10,12 @@ def line(customer_array)
   end
 end 
 
-def take_a_number(line_customers, last_customer)
-  line_customers << last_customer
-  line_of_customers = lines_customers + last_customer 
-  puts "Welcome, #{last_customer}. You are number #{line_customers + 1} in line."
+def take_a_number(customer_array, name)
+  customer_array << name
+  place_in_line = customer_array.find_index(name)
+  puts "Welcome, #{name}. You are number #{place_in_line+1} in line."
 end
+
 
 def now_serving(customer_array)
   if customer_array.count == 0
